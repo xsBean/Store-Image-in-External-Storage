@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#d7dbb9"
+    >
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Image To File"
+        />
+    <ImageView
+        android:id="@+id/iv_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:padding="5dp"
+        android:src="@drawable/birds"
+        />
+    <TextView
+        android:id="@+id/tv_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_source"
+        android:text="Original Image"
+        />
+    <ImageView
+        android:id="@+id/iv_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_toRightOf="@id/iv_source"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_saved"
+        android:layout_alignLeft="@id/iv_saved"
+        />
+</RelativeLayout>
